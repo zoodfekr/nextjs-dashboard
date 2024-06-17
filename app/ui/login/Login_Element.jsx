@@ -40,7 +40,7 @@ const Login_Element = () => {
                             />
 
                             <Link
-                                href="/home"
+                                href="/home/dashboard"
                                 className=' flex justify-center bg-blue-500 rounded-lg p-1 m-1'
                             >ورود
                             </Link>
