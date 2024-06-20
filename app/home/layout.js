@@ -1,25 +1,30 @@
 
 import Box from '@mui/material/Box';
 import Sidebar from '../ui/sidebar/Sidebar';
+import Appbar from '../ui/appbar/Appbar';
 
 
 export default function homeLayout({ children }) {
   return (
     <>
-      <Box className=" flex flex-row h-screen " >
+      <Box className=" flex flex-row h-screen  overflow-hidden" >
 
-        <Box className=" w-60 border border-red-500 p-1">
+
+        {/* ساید بار */}
+        <Box className=" w-60   p-1 hidden md:block">
           <Sidebar></Sidebar>
         </Box>
 
-        <Box className="border grow p-1 border border-red-900 relative h-screen">
+        <Box className=" grow p-1   relative h-screen">
 
+          {/* اپ بار  در صفحات */}
+          <Appbar></Appbar>
 
-
-          <Box className="border border-red-500" sx={{ height: "calc(100vh - 75px)" }}>
-
+          {/* محتوا */}
+          <Box className=" border border-red-500 overflow-x-hidden overflow-y-auto p-1" sx={{ height: "calc(100vh - 75px)" }}>
             {children}
           </Box>
+
         </Box>
 
       </Box>

@@ -18,9 +18,11 @@ const Provider = ({ children }) => {
     return (
         <>
             <CacheProvider value={cacheRtl}>
-                {children}
+         
+                    {children}
+
             </CacheProvider>
-            
+
         </>
     )
 };

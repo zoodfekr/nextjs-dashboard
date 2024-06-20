@@ -1,16 +1,16 @@
 import Box from '@mui/material/Box';
-
+import Avatar from '@mui/material/Avatar';
+import Stack from '@mui/material/Stack';
 
 const dashboard = () => {
 
     return (
         <>
-            <Box className="border border-green-500 w-full">
-                awd
-            </Box>
+          <p>داشبورد</p>
 
         </>
     )
 }
 
 export default dashboard;
+
