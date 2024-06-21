@@ -21,7 +21,11 @@ const Sidebar = () => {
 
     return (
         <>
-            <Box className="flex flex-col h-full bg-stone-700 rounded-lg">
+
+            <Box
+                className="flex flex-col  bg-stone-700 rounded-lg w-full  h-full w-60" 
+
+            >
 
                 <Box className='flex justify-center align-center p-3'>
                     <Image

@@ -7,7 +7,7 @@ import theme from '../app/library/theme/theme';
 import localFont from 'next/font/local'
 
 
-import Provider from "./library/provider/Provider";
+import Custom_Provider from "./library/provider/Provider";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -24,13 +24,13 @@ export default function RootLayout({ children }) {
   return (
     <ThemeProvider theme={theme}>
       <AppRouterCacheProvider options={{ key: 'css' }}>
-        <Provider>
+        <Custom_Provider>
           <html lang="fa-IR" dir="rtl">
             <body className={`${inter.className} ${vazir_font.className}`}>
               {children}
             </body>
           </html>
-        </Provider>
+        </Custom_Provider>
       </AppRouterCacheProvider>
     </ThemeProvider>
   );
