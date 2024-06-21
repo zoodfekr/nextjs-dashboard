@@ -11,21 +11,19 @@ import { Provider } from 'react-redux';
 
 const Custom_Provider = ({ children }) => {
 
-
-    // Create rtl cache
     const cacheRtl = createCache({
         key: 'muirtl',
         stylisPlugins: [prefixer, rtlPlugin],
     });
-
-
 
     return (
 
         <>
             <CacheProvider value={cacheRtl}>
                 <Provider store={store}>
+
                     {children}
+
                 </Provider>
             </CacheProvider>
 

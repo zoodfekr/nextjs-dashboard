@@ -16,11 +16,10 @@ export default function homeLayout({ children }) {
           <Sidebar></Sidebar>
         </Box>
 
+        {/* ساید باز متحرک */}
         <AnchorTemporaryDrawer></AnchorTemporaryDrawer>
 
-
-
-
+        {/* محتوای سمت چپ */}
         <Box className=" grow p-1   relative h-screen">
 
           {/* اپ بار  در صفحات */}
